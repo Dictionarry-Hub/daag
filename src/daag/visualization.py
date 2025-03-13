@@ -171,4 +171,13 @@ def simple_subgraph_filtering(graph):
         main_ax.axis('off')
         fig.canvas.draw_idle()
 
-    #
+    # Connect callbacks
+    check.on_clicked(node_clicked)
+    select_all_button.on_clicked(select_all_clicked)
+    clear_all_button.on_clicked(clear_all_clicked)
+
+    # Draw initial state
+    draw_graph()
+
+    plt.tight_layout()
+    plt.show()

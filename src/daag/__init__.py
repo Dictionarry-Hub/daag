@@ -9,4 +9,4 @@ and edges only connect vertices in adjacent layers.
 from .core import DAAG
 from .visualization import simple_subgraph_filtering
 
-__version__ = "0.1.0"
+__version__ = "0.1.2"
